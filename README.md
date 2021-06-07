@@ -1,4 +1,4 @@
-# [Battledev ScoreboardTify](http://scoreboardtify.cbarange.ovh/)
+# [Battledev ScoreboardTify](https://scoreboardtify.netlify.app/)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/cbarange/Battledev_ScoreboardTify)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/cbarange/Battledev_ScoreboardTify)](https://GitHub.com/cbarange/Battledev_ScoreboardTify/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/cbarange/Battledev_ScoreboardTify)](https://GitHub.com/cbarange/Battledev_ScoreboardTify/issues/)
