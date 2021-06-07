@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 
-import home from '../views/home'
+//import home from '../views/home'
 import battledev20XX from '../views/battledev20XX'
 import battledev2015 from '../views/battledev2015'
 import battledev2016_novembre from '../views/battledev2016_novembre'
@@ -17,7 +17,7 @@ import battledev2021 from '../views/battledev2021'
 Vue.use(VueRouter)
 
 const routes = [  
-  { path: '/', name: 'home', component: home },
+  { path: '/', name: 'battledev20XX', component: battledev20XX },
   { path: '/20XX', name: 'battledev20XX', component: battledev20XX },
   { path: '/2015', name: 'battledev2015', component: battledev2015 },
   { path: '/novembre-2016', name: 'battledev2016_novembre', component: battledev2016_novembre },
