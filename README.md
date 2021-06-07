@@ -1,16 +1,15 @@
-# Battledev ScoreboardTify
----
+# [Battledev ScoreboardTify](http://scoreboardtify.cbarange.ovh/)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/cbarange/Battledev_ScoreboardTify)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/cbarange/Battledev_ScoreboardTify)](https://GitHub.com/cbarange/Battledev_ScoreboardTify/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/cbarange/Battledev_ScoreboardTify)](https://GitHub.com/cbarange/Battledev_ScoreboardTify/issues/)
 [![GitHub contributors](https://img.shields.io/github/contributors/cbarange/Battledev_ScoreboardTify)](https://GitHub.com/cbarange/Battledev_ScoreboardTify/contributors/)
 [![ViewCount](https://views.whatilearened.today/views/github/cbarange/Battledev_ScoreboardTify.svg)](https://views.whatilearened.today/views/github/cbarange/Battledev_ScoreboardTify.svg)
 [![GitHub license](https://img.shields.io/github/license/cbarange/Battledev_ScoreboardTify)](https://github.com/cbarange/Battledev_ScoreboardTify/blob/master/LICENSE)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1cf5efd4-bc30-4217-8306-6cc6d27cb57e/deploy-status)](https://app.netlify.com/sites/heuristic-joliot-ddd32a/deploys)
 
 <img alt="" src="https://raw.github.com/cbarange/Battledev_ScoreboardTify/master/public/static/logo.jpg" height="60px" /> 
 
-**Archive des classements de la Battledev** et plus encore *(pas encore mais bientôt🙂)*
+**Archive des classements de la Battledev** et plus encore *(pas encore mais bientôt🙂)* 
 
 
 
