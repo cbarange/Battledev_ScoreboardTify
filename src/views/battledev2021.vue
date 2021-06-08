@@ -9,13 +9,13 @@
   
     <v-tabs-items v-model="currentTab">
       <v-tab-item>
-        <score_table title="BattleDev 2021 Scoreboard" :headers="headers_individual" :items="scoreboard.individual" items_per_page="50"/>
+        <score_table title="BattleDev 2021 Saison 17 Scoreboard" :headers="headers_individual" :items="scoreboard.individual" items_per_page="50"/>
       </v-tab-item>
       <v-tab-item>
-        <score_table title="BattleDev 2021 Scoreboard" :headers="headers_enterprise_school" :items="scoreboard.enterprise" items_per_page="200"/>
+        <score_table title="BattleDev 2021 Saison 17 Scoreboard" :headers="headers_enterprise_school" :items="scoreboard.enterprise" items_per_page="200"/>
       </v-tab-item>
       <v-tab-item>
-        <score_table title="BattleDev 2021 Scoreboard" :headers="headers_enterprise_school" :items="scoreboard.school" items_per_page="200"/>
+        <score_table title="BattleDev 2021 Saison 17 Scoreboard" :headers="headers_enterprise_school" :items="scoreboard.school" items_per_page="200"/>
       </v-tab-item>      
     </v-tabs-items>  
   </div>
