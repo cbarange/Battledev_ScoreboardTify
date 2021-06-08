@@ -13,7 +13,7 @@
 
 * Site : https://scoreboardtify.netlify.app/
 * Archive Json : https://github.com/cbarange/Battledev_ScoreboardTify/tree/main/public/static
-* Retrouver tous les énoncés et solution : https://www.isograd.com/FR/solutionconcours.php
+* Retrouver tous les énoncés et solutions : https://www.isograd.com/FR/solutionconcours.php
 
 ## TODO / Idée de stats sympa
 
