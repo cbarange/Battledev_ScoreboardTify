@@ -16,6 +16,7 @@
 ## Idée de stats sympa
 
 * [ ] écoles / entreprises les plus representées
+* [ ] Saisir son pseudo pour voir son classement parmis son langage ecole numéro d'exercice heure de soumission
 * [ ] Évolution des langages en % d'utilisation par années 
 * [ ] Temps de résolution moyen par exo
 * [ ] Répartition des participants en fonction des exo / langage, Un mode qui ne prend en compte que les 100 premiers
