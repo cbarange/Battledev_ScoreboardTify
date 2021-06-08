@@ -15,7 +15,7 @@
 * Archive Json : https://github.com/cbarange/Battledev_ScoreboardTify/tree/main/public/static
 * Retrouver tous les énoncés et solution : https://www.isograd.com/FR/solutionconcours.php
 
-## Idée de stats sympa
+## TODO / Idée de stats sympa
 
 * [ ] écoles / entreprises les plus representées
 * [ ] Saisir son pseudo pour voir son classement parmis son langage ecole numéro d'exercice heure de soumission, voir sa progression au fil des ans
@@ -40,7 +40,7 @@
 * **Manque Individuel** [mars 2019 saison 13 (première page indiv + école)](https://web.archive.org/web/20190831145339/https://battledev.blogdumoderateur.com/#resultats)
 * **Manque Individuel** [novembre 2019 saison 14 (première page indiv + entreprise et école)](https://web.archive.org/web/20191210085034/https://battledev.blogdumoderateur.com/) 
 * **Manque Individuel** [mars 2020 saison 15 (première page indiv + entreprise et école)](https://web.archive.org/web/20200804133527/https://battledev.blogdumoderateur.com/)
-* **Manque Entreprise** [novembre 2020 saison 16 (première page indiv)](https://web.archive.org/web/20210118190916/https://battledev.blogdumoderateur.com/) & [indiv](https://github.com/PerthuisQuentin/battle-dev/blob/main/edition-16/ranking.json)
+* **Manque Entreprise & École** [novembre 2020 saison 16 (première page indiv)](https://web.archive.org/web/20210118190916/https://battledev.blogdumoderateur.com/) & [indiv](https://github.com/PerthuisQuentin/battle-dev/blob/main/edition-16/ranking.json)
 
 **Convertion PDF/TXT to JSON**
 ```regex

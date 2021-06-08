@@ -1,5 +1,5 @@
 <template>
-  <div class="battledev2021">
+  <div class="battledev2021_juin">
 
   <v-tabs v-model="currentTab" fixed-tabs background-color="indigo" dark >
     <v-tab>Individuels</v-tab>
@@ -9,13 +9,13 @@
   
     <v-tabs-items v-model="currentTab">
       <v-tab-item>
-        <score_table title="BattleDev 2021 Saison 17 Scoreboard" :headers="headers_individual" :items="scoreboard.individual" items_per_page="50"/>
+        <score_table :title="title" :headers="headers_individual" :items="scoreboard.individual" items_per_page="50"/>
       </v-tab-item>
       <v-tab-item>
-        <score_table title="BattleDev 2021 Saison 17 Scoreboard" :headers="headers_enterprise_school" :items="scoreboard.enterprise" items_per_page="200"/>
+        <score_table :title="title" :headers="headers_enterprise_school" :items="scoreboard.enterprise" items_per_page="200"/>
       </v-tab-item>
       <v-tab-item>
-        <score_table title="BattleDev 2021 Saison 17 Scoreboard" :headers="headers_enterprise_school" :items="scoreboard.school" items_per_page="200"/>
+        <score_table :title="title" :headers="headers_enterprise_school" :items="scoreboard.school" items_per_page="200"/>
       </v-tab-item>      
     </v-tabs-items>  
   </div>
@@ -26,7 +26,7 @@
   import score_table from '../components/score_table'  
 
   export default {
-    name:'battledev2021',
+    name:'battledev2021_juin',
     components: { score_table },
     data: () => {
       return {
@@ -43,7 +43,8 @@
           { text: 'Rang',  align: 'center', filterable: false, value: 'rank', },
           { text: 'Nom', align: 'center', value: 'name' }
         ],
-        scoreboard: battledev2021_score
+        scoreboard: battledev2021_score,
+        title:`BattleDev 2021 Saison ${battledev2021_score.edition} Scoreboard`
       }
     },
   }

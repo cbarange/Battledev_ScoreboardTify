@@ -1,5 +1,5 @@
 <template>
-  <div class="battledev2016_novembre">
+  <div class="battledev2017_novembre">
     <v-tabs v-model="currentTab" fixed-tabs background-color="indigo" dark >
     <v-tab>Individuels</v-tab>
     <v-tab>Écoles</v-tab>
@@ -8,7 +8,7 @@
     <v-tabs-items v-model="currentTab">
       <v-tab-item>
         <score_table :title="title" :headers="headers_individual" :items="scoreboard.individual" items_per_page="50"/>
-      </v-tab-item>
+      </v-tab-item>      
       <v-tab-item>
         <score_table :title="title" :headers="headers_enterprise_school" :items="scoreboard.school" items_per_page="200"/>
       </v-tab-item>      
@@ -17,25 +17,28 @@
 </template>
 
 <script>
-  import battledev2016_score from '../../public/static/battledev2016Nov_score.json'  
+  import battledev2017_score from '../../public/static/battledev2017Nov_score.json'  
   import score_table from '../components/score_table'  
 
   export default {
-    name:'battledev2016_novembre',
+    name:'battledev2017_novembre',
     components: { score_table },
     data: () => {
       return {
         currentTab:'',        
         headers_individual: [
-          { text: 'Rang', align: 'center', filterable: false, value: 'rank', },
-          { text: 'Pseudo', align: 'center', value: 'pseudo' }
+          { text: 'Rang', align: 'start', filterable: false, value: 'rank', },
+          { text: 'Pseudo', value: 'pseudo' },
+          { text: 'Langage', value: 'language' },
+          { text: 'Exercices', value: 'exercice' },
+          { text: 'Heure de la dernière réponse', value: 'last_answer_time' }
         ],
         headers_enterprise_school: [
           { text: 'Rang',  align: 'center', filterable: false, value: 'rank', },
           { text: 'Nom', align: 'center', value: 'name' }
         ],
-        scoreboard: battledev2016_score,
-        title:`BattleDev 2016 Saison ${battledev2016_score.edition} Scoreboard`
+        scoreboard: battledev2017_score,
+        title:`BattleDev 2017 Saison ${battledev2017_score.edition} Scoreboard`
       }
     },
   }

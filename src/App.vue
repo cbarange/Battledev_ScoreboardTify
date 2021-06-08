@@ -6,7 +6,7 @@
     dark
     >
     <div class="d-flex align-center">
-      <a href="https://vuetifyjs.com/en/">
+      <a href="https://vuetifyjs.com/en/" target="_blank">
         <v-img
         alt="Vuetify Logo"
         class="shrink mr-2"
@@ -16,7 +16,7 @@
         width="40"
         />
       </a>
-      <a href="https://battledev.blogdumoderateur.com/">
+      <a href="https://battledev.blogdumoderateur.com/" target="_blank">
         <v-img
         alt="BattleDev Name"
         class="shrink mt-1 hidden-sm-and-down"
@@ -32,20 +32,21 @@
     <v-card max-width="65%">
     <v-tabs center-active dark >
       <v-tab @click="$router.push('/20XX')">20XX</v-tab>
-      <v-tab @click="$router.push('/2015')">2015</v-tab>
-      <v-tab @click="$router.push('/novembre-2016')">Nov 2016</v-tab>
-      <v-tab @click="$router.push('/mars-2016')">Mars 2016</v-tab>
-      <v-tab @click="$router.push('/2017')">2017</v-tab>
-      <v-tab @click="$router.push('/mars-2018')">Mars 2018</v-tab>
-      <v-tab @click="$router.push('/novembre-2018')">Nov 2018</v-tab>
-      <v-tab @click="$router.push('/2019')">2019</v-tab>
-      <v-tab @click="$router.push('/2020')">2020</v-tab>
-      <v-tab @click="$router.push('/2021')">2021</v-tab>
+      <v-tab @click="$router.push('/novembre-2015')">2015<br/>novembre</v-tab>
+      <v-tab @click="$router.push('/mars-2016')">2016<br/>mars</v-tab>
+      <v-tab @click="$router.push('/novembre-2016')">2016<br/>novembre</v-tab>
+      <v-tab @click="$router.push('/mars-2017')">2017<br/>mars</v-tab>
+      <v-tab @click="$router.push('/novembre-2017')">2017<br/>novembre</v-tab>
+      <v-tab @click="$router.push('/mars-2018')">2018<br/>mars</v-tab>
+      <v-tab @click="$router.push('/novembre-2018')">2018<br/>novembre</v-tab>
+      <v-tab @click="$router.push('/mars-2019')">2019<br/>mars</v-tab>
+      <v-tab @click="$router.push('/novembre-2019')">2019<br/>novembre</v-tab>
+      <v-tab @click="$router.push('/mars-2020')">2020<br/>mars</v-tab>
+      <v-tab @click="$router.push('/novembre-2020')">2020<br/>novembre</v-tab>
+      <v-tab @click="$router.push('/juin-2021')">2021<br/>juin</v-tab>
     </v-tabs>
     </v-card>
-    
-    
-    
+
 
     <v-spacer></v-spacer>
 
