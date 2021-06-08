@@ -42,9 +42,9 @@
         headers_individual: [
           { text: 'Rang', align: 'start', filterable: false, value: 'rank', },
           { text: 'Pseudo', value: 'pseudo' },
-          { text: 'Langage', value: 'langage' },
+          { text: 'Langage', value: 'language' },
           { text: 'Exercices', value: 'exercice' },
-          { text: 'Heure de la dernière réponse', value: 'hour' },
+          { text: 'Heure de la dernière réponse', value: 'last_answer_time' },
           //{ text: 'Entreprise / École', value: 'company_school' },
         ],
         headers_enterprise_school: [

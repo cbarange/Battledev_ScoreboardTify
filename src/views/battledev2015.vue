@@ -30,7 +30,7 @@
 </template>
 
 <script>
-  import battledev2015_score from '../../public/static/battledev2015_score.json'  
+  import battledev2015_score from '../../public/static/battledev2015Nov_score.json'  
   import score_table from '../components/score_table'  
 
   export default {
@@ -42,9 +42,9 @@
         headers_individual: [
           { text: 'Rang', align: 'start', filterable: false, value: 'rank', },
           { text: 'Pseudo', value: 'pseudo' },
-          { text: 'Langage', value: 'langage' },
-          //{ text: 'Exercices', value: 'exercice' },
-          //{ text: 'Heure de la dernière réponse', value: 'hour' },
+          { text: 'Langage', value: 'language' },
+          // { text: 'Exercices', value: 'exercice' },
+          // { text: 'Heure de la dernière réponse', value: 'last_answer_time' },
           //{ text: 'Entreprise / École', value: 'company_school' },
         ],
         headers_enterprise_school: [

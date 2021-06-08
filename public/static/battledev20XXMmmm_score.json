@@ -1,5 +1,6 @@
 {
-  "individual": [],
-  "school":[],
-  "enterprise":[]
+  "individual": [{"rank":"","pseudo":"","language":"","exercice":"","last_answer_time":"","company_school":""}],
+  "school":[{"rank":"","name":""}],
+  "enterprise":[{"rank":"","name":""}],
+  "edition":"0"
 }
