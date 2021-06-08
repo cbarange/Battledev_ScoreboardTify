@@ -5,7 +5,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/cbarange/Battledev_ScoreboardTify)](https://GitHub.com/cbarange/Battledev_ScoreboardTify/contributors/)
 [![ViewCount](https://views.whatilearened.today/views/github/cbarange/Battledev_ScoreboardTify.svg)](https://views.whatilearened.today/views/github/cbarange/Battledev_ScoreboardTify.svg)
 [![GitHub license](https://img.shields.io/github/license/cbarange/Battledev_ScoreboardTify)](https://github.com/cbarange/Battledev_ScoreboardTify/blob/master/LICENSE)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1cf5efd4-bc30-4217-8306-6cc6d27cb57e/deploy-status)](https://app.netlify.com/sites/heuristic-joliot-ddd32a/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1cf5efd4-bc30-4217-8306-6cc6d27cb57e/deploy-status)](https://app.netlify.com/sites/scoreboardtify/deploys)
 
 <img alt="" src="https://raw.github.com/cbarange/Battledev_ScoreboardTify/master/public/static/logo.jpg" height="60px" /> 
 
