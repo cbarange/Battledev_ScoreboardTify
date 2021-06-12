@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 
 //import home from '../views/home'
+import battledevstats from '../views/battledevstats'
+import battledevstats_table from '../views/battledevstats_table'
 import battledev20XX from '../views/battledev20XX'
 import battledev2015_novembre from '../views/battledev2015_novembre'
 import battledev2016_novembre from '../views/battledev2016_novembre'
@@ -21,6 +23,8 @@ Vue.use(VueRouter)
 
 const routes = [  
   { path: '/', name: 'battledev20XX', component: battledev20XX },
+  { path: '/stats', name: 'battledevstats', component: battledevstats },
+  { path: '/stats-table', name: 'battledevstats_table', component: battledevstats_table },
   { path: '/20XX', name: 'battledev20XX', component: battledev20XX },
   
   { path: '/novembre-2015', name: 'battledev2015_novembre', component: battledev2015_novembre },
