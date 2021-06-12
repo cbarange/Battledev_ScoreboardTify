@@ -1,7 +1,21 @@
 <template>
   <div class="battledevstats_table">
     
-    <score_table :headers="headers_enterprise_school" :items="data" items_per_page="200"/>
+  <v-tabs v-model="currentTab" fixed-tabs background-color="indigo" dark >
+    <v-tab>Entreprises</v-tab>
+    <v-tab>Écoles</v-tab>
+  </v-tabs>
+  
+    <v-tabs-items v-model="currentTab">
+      <v-tab-item>
+        <score_table :headers="headers_enterprise_school" :items="data_enterprise" items_per_page="200"/>
+      </v-tab-item>
+      <v-tab-item>
+        <score_table :headers="headers_enterprise_school" :items="data_school" items_per_page="200"/>
+      </v-tab-item>
+    </v-tabs-items>  
+
+    
     
     
   </div>
@@ -27,7 +41,9 @@
     components: { score_table},
     data: () => {
       return {
-        data:[],
+        data_school:[],
+        data_enterprise:[],
+        currentTab:'',   
         headers_enterprise_school: [
           { text: 'Rang',  align: 'center', filterable: false, value: 'rank', },
           { text: 'Nom', align: 'center', value: 'name' },
@@ -97,18 +113,46 @@
         return r
       }, {company:new Map(), school:new Map()})
 
+
+      data_as_map = all_score_by_season.reduce((r,v)=> {
+        
+        // [...v.company.entries()].forEach( ([k,v])=>r.company.set(k,r.company.get(k)?r.company.get(k)+v:v) )
+
+        [...v.company.entries()].forEach( ([k,v])=> {
+          let company = r.company.get(k)
+
+          let no_member_participation = company?company.no_member_participation+v.no_participation:v.no_participation
+          let score = company?company.score+v.score:v.score
+
+          r.company.set(k, {no_member_participation: no_member_participation, score: score, no_participation: company?company.no_participation+1:1  } )
+        })
+
+        return r
+      }, data_as_map)
+
       //[x,y,size]
 
-      let data =[]
-      
+      let data_school =[]      
       data_as_map.school.forEach((v,k)=> {
-        // data.push( {name:k, data:[[v.no_member_participation,v.score,v.no_participation]]})
-        data.push( {name:k, no_participation:v.no_participation,score:v.score,no_member_participation:v.no_member_participation})
+        // data_school.push( {name:k, data:[[v.no_member_participation,v.score,v.no_participation]]})
+        data_school.push( {name:k, no_participation:v.no_participation,score:v.score,no_member_participation:v.no_member_participation})
       })
+
+      let data_enterprise =[]      
+      data_as_map.company.forEach((v,k)=> {
+        // data_enterprise.push( {name:k, data:[[v.no_member_participation,v.score,v.no_participation]]})
+        data_enterprise.push( {name:k, no_participation:v.no_participation,score:v.score,no_member_participation:v.no_member_participation})
+      })
+
       
-      this.data=data.sort((a,b)=>b.score-a.score).map((e,i)=>{
+      this.data_school=data_school.sort((a,b)=>b.score-a.score).map((e,i)=>{
         return {...e, rank:i+1}
       })      
+
+      this.data_enterprise=data_enterprise.sort((a,b)=>b.score-a.score).map((e,i)=>{
+        return {...e, rank:i+1}
+      })      
+
     },
   }
 </script>
